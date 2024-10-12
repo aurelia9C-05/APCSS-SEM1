@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bruno Mars">
+    <title>Bruno Mars</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-image: url(brunomarscover.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .home-icon {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .home-icon img {
+            width: 75px;
+            cursor: pointer;
+        }
+
+        .menu-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        .menu-icon img {
+            width: 70px;
+            cursor: pointer;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: #1d1d1d;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            z-index: 1000;
+        }
+
+        .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .sidebar a:hover {
+            color: #f1f1f1;
+        }
+
+        .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 40px;
+            margin-left: 50px;
+        }
+
+        .content {
+            text-align: justify;
+            max-width: 1900px;
+            margin: auto;
+            margin-top: 50px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 100px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 55px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 28px;
+            line-height: 1.8;
+        }
+
+        ul {
+            font-size: 28px;
+        }
+
+        .quote-box {
+            border: 2px solid white;
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            font-style: italic;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .quote-box p {
+            font-size: 28px;
+            margin: 0;
+        }
+
+        .highlight {
+            color: yellow;
+            font-weight: bold;
+        }
+
+        .section-title {
+            font-size: 45px;
+            font-weight: bold;
+            margin-top: 40px;
+        }
+
+        .spacer {
+            height: 100px;
+        }
+
+        span {
+            font-size: 28px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            justify-items: center;
+            margin-top: 50px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+            border-radius: 10px;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="refrence.html">Reference</a>
+    </div>
+
+    <div class="menu-icon" onclick="openNav()">
+        <img src="menu.png" alt="Menu Icon">
+    </div>
+
+    <div class="header">
+        <a href="home.html" class="home-icon">
+            <img src="home.png" alt="Home Icon">
+        </a>
+    </div>
+
+    <div class="content">
+        <h1>Bruno Mars</h1>
+
+        <h2 class="section-title">Biography</h2>
+        <p>
+            <span class="highlight">Peter Gene Hernandez</span>, professionally known as <span class="highlight">Bruno
+                Mars</span>, was born in <span class="highlight">Honolulu, Hawaii</span>, on October 8th, 1985. His
+            family was quite musical: his father was a percussionist, and his mother was a hula dancer. Burno Mars would
+            begin
+            performing at a very young age, impersonating Elvis Presley in his family's band, The Love Notes. Following
+            high school, he relocated to <span class="highlight">Los Angeles</span> in 2003 to pursue his music
+            aspirations.
+        </p>
+
+        <h2 class="section-title">Achievements</h2>
+        <p>
+            Bruno Mars' list of awards and accolades over the years includes the following:
+        <ul>
+            <li>Grammy Awards: Best Male Pop Vocal Performance for <em>"Just the Way You Are."</em></li>
+            <li>American Music Awards: Artist of the Year in 2014.</li>
+            <li>Billboard Music Awards: Top R&B Artist in 2018.</li>
+        </ul>
+        <p>
+            His genres of music include <span class="highlight" style="font-size: 28px;">pop, R&B, funk, and
+                soul</span>. He has many hits, such as
+            <span style="font-size: 28px;">"Uptown Funk," "That's What I Like,"</span> and <span
+                style="font-size: 28px;">"Locked Out of Heaven,"</span> which have topped charts
+            around the world.
+        </p>
+
+
+        <h2 class="section-title">Professional Summary</h2>
+        <p>
+            Bruno Mars is an all-rounder artist, basically a <span class="highlight">singer, songwriter, record
+                producer, and dancer</span>. He first came into the limelight when he performed as a featured artist
+            with the release of B.o.B's <em>"Nothin' on You"</em> and Travie McCoy's <em>"Billionaire."</em> <span
+                class="highlight">Doo-Wops & Hooligans</span>, his 2010 debut album, made him an instantly recognizable
+            name and a leading figure in the music world.
+        </p>
+
+        <h2 class="section-title">Popular Quote</h2>
+        <div class="quote-box">
+            <p>
+                "I'd always been a working musician in Hawaii and never had problems paying rent. And then it's like,
+                'Now I'm in L.A. and my phone's getting shut off.' That's when reality hit."
+            </p>
+        </div>
+
+        <div class="gallery">
+            <img src="bruno1.jpg" alt="Bruno Mars Image 1">
+            <img src="bruno2.jpg" alt="Bruno Mars Image 2">
+            <img src="bruno3.jpg" alt="Bruno Mars Image 3">
+            <img src="bruno4.jpg" alt="Bruno Mars Image 4">
+            <img src="bruno5.jpg" alt="Bruno Mars Image 5">
+            <img src="bruno6.jpg" alt="Bruno Mars Image 6">
+        </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.querySelector('.menu-icon').style.display = 'none';
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.querySelector('.menu-icon').style.display = 'block';
+        }
+    </script>
+
+</body

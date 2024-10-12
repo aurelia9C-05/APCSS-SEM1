@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Muhammad Tulus Rusydi">
+    <title>Tulus</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-image: url(tuluscover.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .home-icon {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .home-icon img {
+            width: 75px;
+            cursor: pointer;
+        }
+
+        .menu-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        .menu-icon img {
+            width: 70px;
+            cursor: pointer;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: #1d1d1d;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            z-index: 1000;
+        }
+
+        .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .sidebar a:hover {
+            color: #f1f1f1;
+        }
+
+        .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 40px;
+            margin-left: 50px;
+        }
+
+        .content {
+            text-align: justify;
+            max-width: 1900px;
+            margin: auto;
+            margin-top: 50px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 100px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 55px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 28px;
+            line-height: 1.8;
+        }
+
+        ul {
+            font-size: 28px;
+        }
+
+        .quote-box {
+            border: 2px solid white;
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            font-style: italic;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .quote-box p {
+            font-size: 28px;
+            margin: 0;
+        }
+
+        .highlight {
+            color: rgb(34, 69, 182);
+            font-weight: bold;
+        }
+
+        .section-title {
+            font-size: 45px;
+            font-weight: bold;
+            margin-top: 40px;
+        }
+
+        .spacer {
+            height: 100px;
+        }
+
+        span {
+            font-size: 28px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            justify-items: center;
+            margin-top: 50px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+            border-radius: 10px;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="refrence.html">Reference</a>
+    </div>
+
+    <div class="menu-icon" onclick="openNav()">
+        <img src="menu.png" alt="Menu Icon">
+    </div>
+
+    <div class="header">
+        <a href="home.html" class="home-icon">
+            <img src="home.png" alt="Home Icon">
+        </a>
+    </div>
+
+    <div class="content">
+        <h1>Tulus</h1>
+
+        <h2 class="section-title">Biography</h2>
+        <p>
+            <span class="highlight">Muhammad Tulus Rusydi</span>, known simply as <span class="highlight">Tulus</span>,
+            was born on <span class="highlight">August 20, 1987</span>, in <span class="highlight">Bukittinggi,
+                Indonesia</span>. He grew up in a musical environment, with a deep interest in music from a young age,
+            influenced by his mother, who sold music cassettes. Tulus pursued higher education in architecture at <span
+                class="highlight">Universitas Katolik Parahyangan</span> in <span class="highlight">Bandung</span>,
+            where he began to explore his musical talents more seriously.
+        </p>
+
+        <h2 class="section-title">Achievements</h2>
+        <p>
+            Tulus has received over <span class="highlight">60 awards</span> in music and cinematography throughout his
+            career. Notable achievements include:
+        <ul>
+            <li>5 AMI Awards for his album <span class="highlight">Monokrom</span> in 2017.</li>
+            <li>Leading the performance of <span class="highlight">"Indonesia Raya"</span> at the opening ceremony of
+                the 2018 Asian Games.</li>
+            <li>His album <span class="highlight">Gajah</span> became the first Indonesian album to enter the Top 10
+                best-selling albums on iTunes Asia.</li>
+        </ul>
+        <p>
+            Tulus is known for his contributions to <span class="highlight" style="font-size: 28px;">Indonesian pop
+                music</span> and continues to be a significant figure in the industry.
+        </p>
+
+        <h2 class="section-title">Professional Summary</h2>
+        <p>
+            Tulus is a celebrated <span class="highlight">singer-songwriter</span> and has established his own record
+            label, <span class="highlight">TulusCompany</span>, to maintain creative control over his work. He began his
+            professional career in 2011 with the release of his debut album titled <span class="highlight">Tulus</span>,
+            which was well-received and marked a significant milestone in Indonesian music.
+        </p>
+
+        <h2 class="section-title">Famous Quote</h2>
+        <div class="quote-box">
+            <p>
+                "I decided to be independent with my family's support. I had no fear of not being heard. I believe that
+                there will be space for my music."
+            </p>
+        </div>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="tulus1.jpg" alt="Tulus Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="tulus2.jpg" alt="Tulus Image 2">
+            </div>
+            <div class="gallery-item">
+                <img src="tulus3.jpg" alt="Tulus Image 3">
+            </div>
+            <div class="gallery-item">
+                <img src="tulus4.jpg" alt="Tulus Image 4">
+            </div>
+            <div class="gallery-item">
+                <img src="tulus5.jpg" alt="Tulus Image 5">
+            </div>
+            <div class="gallery-item">
+                <img src="tulus6.jpg" alt="Tulus Image 6">
+            </div>
+        </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.querySelector('.menu-icon').style.display = 'none';
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.querySelector('.menu-icon').style.display = 'block';
+        }
+    </script>
+
+</body>
+
+</html>
